@@ -2,10 +2,10 @@
 FROM node:10-alpine
 
 # 移动 当前目录文件 到 目标目录 下
-# ADD . dest
+ADD . /app/
 
 # 工作目录，类似于cd命令
-WORKDIR /Users/sgoldl/Documents/work/workspace/my/magic-of-docker/02/nodejs
+WORKDIR /app
 
 # 构建镜像时执行的命令
 RUN npm install
